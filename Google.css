@@ -1,0 +1,164 @@
+
+.flex-container{
+    margin-bottom: 25%;
+    font-family: Cambria, serif;
+    text-decoration: none;
+}
+
+.flexbox1{
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+    list-style-type: none;
+	margin: 0;
+	padding: 2px;
+	text-align: center;
+}
+
+.nav-links{
+    display: flex;
+    gap: 10px;
+    padding: 1px;
+    font-family: "trirong",serif;
+    
+}
+.nav-links a{
+    color: black;
+    font-size: smaller;
+    list-style-type: none;
+} 
+.nav-proPic{
+    display: inline-flex;
+    gap: 15px;
+    /* padding: 2px; */
+    width: 6%;
+}
+.proPic{
+    width: 100%;
+    border-radius: 25px 25px 25px;
+}
+
+.flexbox2{
+    
+    text-align: center;
+}
+ .logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   margin-bottom: 30px;
+   margin-top: 100px;
+
+
+}
+input{
+    width: 40%;
+    border-radius: 25px 25px 25px 25px;
+    height: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(193, 202, 193);
+    padding: 10px;
+
+}
+
+.search-links button{
+    background-color: rgba(242, 253, 253, 0.918);
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.nav-container{
+    text-align: center;
+}
+.nav-container a{
+    text-decoration: none;
+    /* color: black; */
+}
+
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgb(237, 244, 245);
+}
+.footer a{
+    color:black;
+    text-decoration: none;
+
+}
+.carbon{
+    padding-bottom: 20px;
+    padding-top: 1em;
+}
+.carbon a{
+    color:black;
+}
+.SA{
+    text-align: start;
+    color: black;
+    margin-left: 40px;
+}
+
+
+@media screen and (max-width: 480px){
+    .flex-container{
+        /* margin-bottom: 5%; */
+        font-family: Cambria, serif;
+        text-decoration: none;
+    }
+    .flexbox1{
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 2px;
+        text-align: center;
+        gap: 1px;
+    }
+    .nav-links{
+        display: flex;
+        gap: 2px;
+        padding: 0px;
+        font-family: "trirong",serif;
+        
+    }
+    .nav-links a{
+        color: black;
+        font-size: 5px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .nav-proPic{
+        display: inline-flex;
+        gap: 1px;
+        padding: 1px;
+        width: 20%;
+    
+    }
+    .proPic{
+        width: 70%;
+        border-radius: 25px 25px 25px;
+    }
+    input{
+    
+        border-radius: 25px 25px 25px 25px;
+        height: 50px;
+        margin-bottom: 20px;
+
+        width: 80%;
+        height: 5px;
+        border: 1px solid rgb(193, 202, 193);
+        padding: 10px;
+    
+    }
+
+
+
+
+    
+} 
