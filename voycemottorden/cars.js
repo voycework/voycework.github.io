@@ -149,34 +149,6 @@ loaded.addCars();
 //     car.showMore()
 // }
 
-// var car1 = new CarDescription('Porsche991', 'GT3', 'White', 'DADDY-01', 'R1 540 000');
-// var car2 = new CarDescription('Ford', 'Fiesta', 'Red', 'DDY001EC', 'R80 000');
-// var car3 = new CarDescription('Opel', 'Corsa', 'White', 'CYG204MP', 'R55 000');
-// var car4 = new CarDescription('BMW', '320i', 'White', 'CPT002GP', 'R240 000');
-// var car5 = new CarDescription('Mercedes Benz', 'C63s', 'black', 'JBL202AC', 'R 2 599 950');
-
-// let btn1 = document.getElementById('first-car')
-// let btn2 = document.getElementById('second-car')
-// let btn3 = document.getElementById('third-car')
-// let btn4 = document.getElementById('fourth-car')
-// let btn5 = document.getElementById('fifth-car')
-
-// btn1.onclick = () => car1.click()
-// btn2.onclick = () => car2.click()
-// btn3.onclick = () => car3.click()
-// btn4.onclick = () => car4.click()
-// btn5.onclick = () => car5.click()
-
-// btn1.onclick = function() {
-//     car.showmore();
-//   };
-
-//   const display_cars = [   new makeCar(2008, "ferrari", "red", "car_image1", "bcv4", "R13000"),   new makeCar(2009, "chev", "white", "car_image2", "bcv5", "R48000"),   new makeCar(2010, "bmw", "black", "car_image3", "bcv6", "R15000"),   new makeCar(2011, "mercedes", "yellow", "car_image4", "bcv7", "R16000"),   new makeCar(2012, "mini", "blue", "car_image5", "bcv8", "R17000") ]
-
-
-
-
-
 
 
 
