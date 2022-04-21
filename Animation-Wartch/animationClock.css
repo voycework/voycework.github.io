@@ -13,7 +13,8 @@ body{
     height: 300px;
     width: 300px;
     border: 15px solid teal;
-    background: rgb(196, 196, 196);
+    background: url(images/clock2.png);
+    background-size: cover;
     border-radius: 50px;
     box-shadow: -2px 2px 0 #232322, inset 0 0 20px rgb(0,0,0,0.5);
     /* transform: scale(0.5, 5.3); */
@@ -26,9 +27,9 @@ body{
     left: 50%;
     width: 40%;
     height: 6px;
-    background: rgb(81, 81, 81);
+    background: rgba(81, 81, 81, 0.94);
     border-radius: 3px;
-    animation: rotate 5.5s linear infinite;
+    animation: rotate 1800s linear infinite;
     transform-origin: 0% 50%;
 }
 /* @keyframes rotate{
@@ -40,14 +41,36 @@ body{
         transform: rotate(0deg);
     }
      100%{
-         transform: rotate(360deg);
+        transform: rotate(360deg);
      }
 }
 
+.minute{
+    content: '';
+    position: absolute;
+    top: calc(50% - 3px); 
+    left: 50%;
+    width: 25%;
+    height: 6px;
+    background: rgba(81, 81, 81, 0.94);
+    border-radius: 3px;
+    animation: rotate 3600s linear infinite;
+    transform-origin: 0% 50%;
+}
 
 
-
-
+.second{
+    content: '';
+    position: absolute;
+    top: calc(50% - 3px); 
+    left: 50%;
+    width: 40%;
+    height: 6px;
+    background: rgba(249, 41, 41, 0.94);
+    border-radius: 3px;
+    animation: rotate 60s linear infinite;
+    transform-origin: 0% 50%;
+}
 
 
 
