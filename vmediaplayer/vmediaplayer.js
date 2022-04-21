@@ -1,14 +1,37 @@
-var art = [];//Create an empty array that we will use to store all the artist objects created.
+//Create an empty array that we will use to store all the artist objects created.
+var art = [];
+
+// let body = document.getElementById("body")
+
+// function myLoad(){
+//     let clear = document.getElementById("clear")
+//     // creating the all clear button
+//     let clrButton = document.createElement('button')
+//     clrButton.innerHTML = "Clear All"
+
+//     // creat event listener to trigger if button is clicked.
+//     clrButton.addEventListener('click', function clrAll(){
+//         //clear the local storage
+//         localStorage.clear()
+//     });
+
+//     //add some styling to position the clear all button
+//     clrButton.style.display="block"
+//     clrButton.style.margin = "5px"
+
+//     // add button to HTML document
+//     clear.appendChild(clrButton)
+// }
 
 function myLoad() {
     let htmlSelect = document.getElementById("artistList");
     htmlSelect.style.visibility = "hidden";
 
-    if (sessionStorage.getItem("hasCodeRunBefore") === null) {
-        sessionStorage.setItem("artists", JSON.stringify(art));
-        sessionStorage.setItem("hasCodeRunBefore", true);
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
+        localStorage.setItem("artists", JSON.stringify(art));
+        localStorage.setItem("hasCodeRunBefore", true);
     } else {
-        art = JSON.parse(sessionStorage.getItem("artists"));//Get the array of artist objects from sessionStorage and assign it to the array 'art'
+        art = JSON.parse(localStorage.getItem("artists"));//Get the array of artist objects from localStorage and assign it to the array 'art'
         let i = 0;
         art.forEach(function(p) {//Loop through each artist (p) in the art array
             /*For each artist in the array create an option element that displays 
@@ -23,7 +46,7 @@ function myLoad() {
             htmlSelect.style.visibility = "visible";
         }
     }
-}
+// }
 
 //Below we create the constructor function that will be used to create all artist objects.
 function Artist(artist, title, album, genre, year) {
@@ -38,9 +61,9 @@ function Artist(artist, title, album, genre, year) {
 HTML page. Each time this happens we will retrieve the data about the artist from the form on the HTML page
 that the user has completed. We call the artist constructor function and pass through all this data as
 arguments to create a new artist object. We then add the object to the array of people objects using the push method
-(art.push). Because we want this information to be available accross page loads, we add the updated array of people to sessionStorage. */
+(art.push). Because we want this information to be available accross page loads, we add the updated array of people to localStorage. */
 function addArtist() {
-    art = JSON.parse(sessionStorage.getItem("artists"));
+    art = JSON.parse(localStorage.getItem("artists"));
     let newArtist = new Artist(
         document.getElementById("artName").value,
         document.getElementById("songName").value,
@@ -49,7 +72,7 @@ function addArtist() {
         document.getElementById("year").value
     );
     art.push(newArtist);
-    sessionStorage.setItem("artists", JSON.stringify(art));
+    localStorage.artistData. JSON.stringify(art);
 
 }
 
@@ -82,3 +105,32 @@ function ChangeActiveUser(indexOfArtistObj) {
     };
     art[indexOfArtistObj].bio();
 }
+
+
+
+
+
+
+// console.log(art)
+// for (let i in art){
+//     let table_row = document.createElement('tr')
+//     let dltButton   = document.createElement('button')
+//     dltButton.innerHTML = "Delete"
+//     dltButton.addEventListener('click', function dltArtist(){
+//         art.splice(i,1)
+//         localStorage.artistData = JSON.stringify(art);
+
+//     });
+
+// for(let [key, value]of Object.entries(art[i])){
+//     var div = document.createElement('th')
+//     div.innerHTML = value;
+//     div.oninput = function(e){
+//         art[i][key] = e.target.innerHTML(art);
+//     }
+//     table_row.appendChild(div)
+// }
+
+// body.appendChild(table_row)
+// body.appendChild(dltButton)
+// }
