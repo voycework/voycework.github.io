@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="voyvedaartist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/ecf4ae50ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.htmll"><img src="images-dev/CKU Univercity logo.PNG" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">KIDS CODE TOO</a></li>
+                    <li><a href="blog.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!------ contact page ----->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.9729663196667!2d25.65671061482949!3d-33.99322813295807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7acd4bb1608b85%3A0x8b544ba3853b3008!2s20%20Louis%20Botha%2C%20Summerstrand%2C%20Gqeberha%2C%206001!5e0!3m2!1sen!2sza!4v1660506461578!5m2!1sen!2sza"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>20 Luis Botha Crescent, Summerstrand</h5>
+                        <p>Gqeberha 6001</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+27 728823788</h5>
+                        <p>Monday to Saturday, 9AM to 5Pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>info@CKUnivercity.co.za</h5>
+                        <p>Email us any query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form id="form" onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" id="name" placeholder="Enter your name" required></input>
+                    <input type="email" id="email" placeholder="Enter your Email" required></input>
+                    <input type="text" id="subject" placeholder="Enter your subject" required></input>
+                    <textarea id="message" rows="8" placeholder="How can we help you?" required></textarea>
+                    <button type="submit" id="form-btn" class="visit-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!------ Footer ----->
+
+    <footer class="footer">
+        <h4>Abut Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Tempore odit doloremque qui, <br>
+            facere eveniet sunt obcaecati.</p>
+        <div class="socials">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Mfundo Mpati Dev</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="ckunivesity.js"></script>
+</body> 
