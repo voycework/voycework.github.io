@@ -126,7 +126,8 @@ nav .fa{
         height: 60vh;
         width: 100%;
         border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px
+        border-bottom-left-radius: 20px;
+        /* display: none; */
         /* top: 0; */
         /* right: 0; */
         /* bottom: 10px; */
@@ -164,5 +165,8 @@ nav .fa{
     .blue-btn{
         padding: 16px 50px;
         font-size: 18px;
+    }
+    .nav-links{
+        display: none;
     }
 }
