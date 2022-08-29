@@ -9,7 +9,7 @@ let countDisp = document.getElementById("counter");
 
 
 
-    if (disp() % 2 !== 0){
+    if (disp() % 2 == 0){
         navlinks.style.display="block";
 
     }else{
